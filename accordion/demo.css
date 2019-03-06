@@ -1,0 +1,40 @@
+
+div{
+	width: 1050px;/*宽度要足够大，能够容下所有图片*/
+	margin: 100px auto;
+}
+div ul li{
+	float: left;
+	height: 284px;
+	width: 200px;
+	border-left:2px solid rgba(225,225,225,0.8);
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	overflow: hidden;
+	transition: all 2s;
+	position: relative;
+	list-style: none;
+}
+div ul:hover li{
+	width: 80px;
+}
+div ul li:hover{
+	width: 500px;
+}
+div ul li img{
+	width: 500px;
+	height:100%; 
+}
+div ul li .title{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;/*本身自带margin，不设值也可以*/
+	height: 50px;
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+	line-height: 50px;
+	text-indent: 2em;
+}
+div ul li .title a{
+	color: #fff;
+	text-decoration: none;
+}
